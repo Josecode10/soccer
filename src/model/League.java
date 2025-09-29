@@ -12,6 +12,7 @@ public class League {
 
     // Constructor
     public League(String leagueName) {
+        this.leagueName = leagueName;
         this.teams = new ArrayList<>();
         this.leagueId = ++leagueCounter;
     }
@@ -40,7 +41,7 @@ public class League {
         System.out.println("\n--- Team List ---");
         var i = 0;
         for(Team team: teams) {
-            System.out.println("\n" + team + "\n");
+            System.out.println("\n" + ++i + ") " + team + "\n");
             team.listPlayers();
         }
     }

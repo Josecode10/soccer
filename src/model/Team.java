@@ -47,7 +47,7 @@ public class Team {
     }
 
     public void listPlayers() {
-        System.out.print("--- Player list ---\n");
+        System.out.println("--- Player list ---\n");
         var i = 0;
         for(Player player: players) {
             System.out.println(++i + ") " + player);
